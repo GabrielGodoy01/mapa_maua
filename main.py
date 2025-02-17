@@ -7,17 +7,23 @@ import base64
 
 # Definição de coordenadas para os locais
 coordenadas = {
-    "biblioteca": (-23.647906, -46.574333),
     "ca": (-23.649068, -46.572754),
-    "ginasio": (-23.647027, -46.573147)
+    "cantina": (-23.648451, -46.574281),
+    "fablab": (-23.64916153193695, -46.57292651987969),
+    "labw300": (-23.647865, -46.573980),
+    "motores": (-23.647091, -46.573561),
+    "reitoria": (-23.647213, -46.574267),
+    "sala_professores": (-23.648137, -46.572739),
+    "salau22": (-23.648283, -46.573975),
+    "secretaria": (-23.648324466707592, -46.57265010937414),
 }
 
 # Criando o mapa centralizado na biblioteca (poderia ser outro local)
-local_inicial = coordenadas["biblioteca"]
+local_inicial = coordenadas["ca"]
 mapa = folium.Map(location=local_inicial, zoom_start=15)
 
 # Lista de arquivos CSV
-arquivos_csv = ["biblioteca.csv", "ca.csv"]
+arquivos_csv = ["ca.csv", "cantina.csv", "fablab.csv", "labw300.csv", "motores.csv", "reitoria.csv", "sala_professores.csv", "salau22.csv", "secretaria.csv"]
 
 for arquivo in arquivos_csv:
     nome_local = arquivo.split(".")[0]  # Obtendo o nome do local

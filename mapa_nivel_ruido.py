@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Nome do arquivo com os dados
-arquivo_csv = "ca.csv"
+arquivo_csv = "exemplo.csv"
 
 # Carregar os dados do CSV
 dados = pd.read_csv(arquivo_csv)
